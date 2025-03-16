@@ -11,7 +11,7 @@ function agregarAmigos() {
     const nombre = input.value.trim();
 
     // corroborar que no se añada un valor vacio
-    if(nombre === '') {
+    if(!isNaN(nombre) || nombre === '') {
         alert('Por favor ingresa un nombre valido.')
         return;
     }
